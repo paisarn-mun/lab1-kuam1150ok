@@ -1,8 +1,5 @@
-1. List 3 different protocols that appear in the protocol column in the unfiltered
-packet-listing window in step 7 above. 
-ans:  1. TCP
-      2. QUIC
-      3. SSDP
+1.	Which of the following protocols are shown as appearing (i.e., are listed in the Wireshark “protocol” column) in your trace file: TCP, QUIC, HTTP, DNS, UDP, TLSv1.2?
+ans:  HTTP 
 
 2. How long did it take from when the HTTP GET message was sent until the HTTP
 OK reply was received? (By default, the value of the Time column in the packetlisting window is the amount of time, in seconds, since Wireshark tracing began.
@@ -16,3 +13,11 @@ ans:  HTTP GET message sent at = 13:00:13.215699
 3. What is the Internet address of the gaia.cs.umass.edu (also known as wwwnet.cs.umass.edu)? What is the Internet address of your computer?
 ans:  internet address of gaia.cs.umass.edu : 128.119.245.12
       internet address of my computer : 10.62.95.135
+
+4.	Expand the information on the HTTP message in the Wireshark “Details of selected packet” window (see Figure 3 above) so you can see the fields in the HTTP GET request message. What type of Web browser issued the HTTP request?  The answer is shown at the right end of the information following the “User-Agent:” field in the expanded HTTP message display. [This field value in the HTTP message is how a web server learns what type of browser you are using.]
+•	Firefox, Safari, Microsoft Internet Edge, Other
+ans:      chrome
+
+5.	Expand the information on the Transmission Control Protocol for this packet in the Wireshark “Details of selected packet” window (see Figure 3 in the lab writeup) so you can see the fields in the TCP segment carrying the HTTP message. What is the destination port number (the number following “Dest Port:” for the TCP segment containing the HTTP request) to which this HTTP request is being sent?
+ans:
+      destination port : 80
